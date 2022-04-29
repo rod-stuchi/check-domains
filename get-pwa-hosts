@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# PROD
+# kubectl 2>/dev/null get ing -ojson | jq -r '.items[] | select(.metadata.name | contains("pwa")) | .spec | .rules[] | .host' | rg 'dialog\.cm'
+
+# QA
+kubectl 2>/dev/null get ing -ojson | jq -r '.items[] | select(.metadata.name | contains("pwa")) | .spec | .rules[] | .host'
