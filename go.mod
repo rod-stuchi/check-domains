@@ -3,10 +3,13 @@ module github.com/rod-stuchi/check-domains
 go 1.17
 
 require (
-	github.com/PuerkitoBio/goquery v1.8.0 // indirect
+	github.com/PuerkitoBio/goquery v1.8.0
+	github.com/cheggaaa/pb/v3 v3.0.8
+)
+
+require (
 	github.com/VividCortex/ewma v1.1.1 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect
-	github.com/cheggaaa/pb/v3 v3.0.8 // indirect
 	github.com/fatih/color v1.10.0 // indirect
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect
