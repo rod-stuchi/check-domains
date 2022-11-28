@@ -1,0 +1,3 @@
+#!/bin/bash
+
+kubectl 2>/dev/null get ing -ojson | jq -r '.items[] | select(.metadata.name | contains("adm")) | .spec | .rules[] | .host'
