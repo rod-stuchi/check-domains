@@ -1,7 +1,7 @@
 .MAIN: build
 
 build:
-	go build -o hosts
+	go build -o hostsc
 
 build-strip:
 	go build -ldflags "-s -w" -o hostsc
